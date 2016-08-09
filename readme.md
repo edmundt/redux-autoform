@@ -7,7 +7,7 @@
 **Beta version disclaimer**
 
 `redux-autoform` is under active development. APIs will change and things may still not work as expected. If you find
-  any issue, please [report it](https://github.com/gearz-lab/redux-autoform/issues). We'll do my best to fix it.
+  any issue, please [report it](https://github.com/gearz-lab/redux-autoform/issues). We'll do our best to fix it.
   
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
