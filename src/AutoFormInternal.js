@@ -50,18 +50,15 @@ class AutoFormInternal extends Component {
     render() {
         let { handleSubmit, submitting, buttonBar, fieldLayout } = this.props;
         let groupComponent = this.buildGroupComponent();
+        let componentFactory = this.getFactory();
 
-        // Setting the form class name to "form-horizontal" only affects Bootstrap.
-        // ToDo: Make the UI to provide the form class name or the entire Form component
-        let formClassName = (fieldLayout == 'inline')? "form-horizontal" : "";
+        let Root = componentFactory.getRoot();
 
         return (
-            <div className="meta-form">
-                <form onSubmit={handleSubmit} className={formClassName}>
-                    { groupComponent }
-                    { React.createElement(buttonBar, { submitting: submitting }) }
-                </form>
-            </div>
+            <Root {...this.props}>
+                { groupComponent }
+                { React.createElement(buttonBar, { submitting: submitting }) }
+            </Root>
         )
     }
 }
